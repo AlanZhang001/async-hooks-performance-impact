@@ -4,7 +4,7 @@
   "description": "Performance impact of async_hooks",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node run.js"
   },
   "keywords": [],
   "author": "Benedikt Meurer <bmeurer@chromium.org>",

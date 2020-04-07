@@ -22,6 +22,7 @@ autocannon({
     connections: 100, //default 10,
     duration: 5,      // default 5
 }, (error, results) => {
+  // console.log(JSON.stringify(results.requests,null,2));
   console.log(`koaserver: ${results.requests.mean} reqs.`);
   process.exit();
 })
