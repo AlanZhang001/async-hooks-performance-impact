@@ -5,7 +5,6 @@ const hook = './async-hook.js';
 
 async function main() {
   console.log(`node version:${process.versions.node},v8 version:${process.versions.v8}`);
-  console.log('-----------------------------------------------------');
   for (benchmark of BENCHMARKS) {
     const regular = cp.spawnSync(process.execPath, [ benchmark ]);
     console.log(`regular                     ${regular.stdout.toString().trim()}`);
@@ -15,7 +14,6 @@ async function main() {
     const full = cp.spawnSync(process.execPath,
       [ '--require', './async-hook-full.js', benchmark ]);
     console.log(`init,destroy,promiseResolve ${full.stdout.toString().trim()}`);
-    console.log('-----------------------------------------------------');
   }
 }
 

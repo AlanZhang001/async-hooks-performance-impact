@@ -11,7 +11,6 @@ app.use(async ctx => {
   // });
 
   // ctx.body = await promise;
-  ctx.body = 'Hello World!';
 });
 app.listen(port);
 
